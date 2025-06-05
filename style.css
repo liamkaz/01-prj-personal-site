@@ -1,1 +1,40 @@
-/* Add you CSS here */
+/* Simple CSS for Liam's personal website */
+
+/* Style for the hero section */
+.hero {
+  text-align: center; /* Center the text and image */
+  background-color: #f0f0f0; /* Light background color */
+  padding: 30px 0; /* Space above and below */
+}
+
+/* Style for the profile image */
+.hero-img {
+  width: 150px; /* Set image width */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 15px; /* Space above the image */
+}
+
+/* Style for section headings */
+h2 {
+  color: #333;
+}
+
+/* Style for the biography, skills, and links sections */
+.biography, .skills, .links {
+  max-width: 600px; /* Limit width for readability */
+  margin: 30px auto; /* Center the sections */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Style for links */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
