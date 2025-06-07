@@ -80,6 +80,12 @@
   text-align: center;
 }
 
+/* Make skills icons bigger in the skills section on the home page */
+.skills-section li i {
+  font-size: 2.5em; /* Make the icons larger */
+  margin-bottom: 8px;
+}
+
 /* Links section styles */
 .links-section {
   /* Even lighter blue shade */
@@ -150,7 +156,7 @@ a:hover {
 
 /* Style the navigation links */
 .navbar a {
-  color: #ffd700; /* Gold color for links */
+  color: #fff; /* Gold color for links */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
