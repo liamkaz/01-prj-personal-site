@@ -2,10 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>liam's personal website</title>
+  <!-- Link to the CSS file for styling -->
   <link rel="stylesheet" href="style.css">
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Simple navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <!-- Each link points to a different page. You can create these pages later. -->
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about me</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="skills.html">skills</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section (includes About Me) -->
+  <div class="hero">
+    <!-- Main welcome message -->
+    <h1>liam kaznelson | software engineer</h1>
+    <!-- Profile picture -->
+    <img src="img/me.jpg" alt="Picture of Liam" class="hero-img">
+    <!-- About Me text moved into hero section -->
+    <p class="about-me">
+      practicing oop, data structures, and learning web development
+    </p>
+  </div>
+
+  <!-- Programming Philosophy Section (styled like other sections) -->
+  <div class="philosophy-section">
+    <h2>my programming philosophy</h2>
+    <!-- Philosophy text styled like other sections -->
+    <p class="philosophy-text">
+      the thing that's always drawn me to coding is the puzzle solving aspect of it. even through hours of work on miscellaneous school or personal projects, i always find myself enjoying the problem solving process, and feeling a level of gratification when i finally solve a problem, one that i don't find in any other aspect of my life. the creative aspects, the ability to lose yourself in the hundreds or thousands of lines of code, and the satisfcation of seeing your code, just words on a screen, come to life in the form of a game, app, or website, is something that i find truly special. i hope to continue to learn and grow as a programmer, and to one day create something that others can enjoy and find value in.
+    </p>
+  </div>
+
+  <!-- Spotify Favorites Section -->
+  <div class="spotify-section">
+    <h2>my favorite coding songs</h2>
+    <!-- Add your favorite Spotify song links below -->
+    <ul class="spotify-list">
+      <li>
+        <!-- Novacane - Frank Ocean -->
+        <a href="https://open.spotify.com/track/4osgfFTICMkcGbbigdsa53?si=26315ee53c6e41c0" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e0259a428dc7ef8e0c12b0fe18a" alt="Novacane cover" class="spotify-thumb"><br>
+          Novacane - Frank Ocean
+        </a>
+      </li>
+      <li>
+        <!-- All Time Low - Jon Bellion -->
+        <a href="https://open.spotify.com/track/1CnPYaKxTVb4LWOtiGOm0m?si=a74a14ea01734af3" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e02a01c1fddc334c0bd15e4452d" alt="All Time Low cover" class="spotify-thumb"><br>
+          All Time Low - Jon Bellion
+        </a>
+      </li>
+      <li>
+        <!-- Heartbeat - Childish Gambino -->
+        <a href="https://open.spotify.com/track/5AGQSF0ytihJyt96K5vW9d?si=fb2d17343dc540e6" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e026182cfe2e2a090d125c81dc0" alt="Heartbeat cover" class="spotify-thumb"><br>
+          Heartbeat - Childish Gambino
+        </a>
+      </li>
+      <li>
+        <!-- Lady of Namek - Tory Lanez -->
+        <a href="https://open.spotify.com/track/6ieWL5CLN9WdC875guWtMe?si=e537284059374374" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e020c5f23cbf0b1ab7e37d0dc67" alt="Lady of Namek cover" class="spotify-thumb"><br>
+          Lady of Namek - Tory Lanez
+        </a>
+      </li>
+      <li>
+        <!-- Flatline - Justin Bieber -->
+        <a href="https://open.spotify.com/track/2GBgiuXwY1KzJMA0gSAr9J?si=64b369b8d2d748de" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e0258ae8fddecbd2630005409c9" alt="Flatline cover" class="spotify-thumb"><br>
+          Flatline - Justin Bieber
+        </a>
+      </li>
+      <li>
+        <!-- Consume - Chase Atlantic -->
+        <a href="https://open.spotify.com/track/0X2bh8NVQ8svDQIn2AdCbW?si=9228f2fd56044538" target="_blank" class="plain-link">
+          <img src="https://i.scdn.co/image/ab67616d00001e025a0c2870f4f309e382d1fad6" alt="Consume cover" class="spotify-thumb"><br>
+          Consume - Chase Atlantic
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Personal Profile Links Section -->
+  <div class="links-section">
+    <h2>find me online</h2>
+    <!-- Display links horizontally using a class -->
+    <ul class="links-horizontal">
+      <li>
+        <!-- GitHub icon above text -->
+        <i class="fab fa-github fa-2x link-icon"></i><br>
+        <a href="https://github.com/liamkaz" target="_blank" class="plain-link">GitHub</a>
+      </li>
+      <li>
+        <!-- LinkedIn icon above text -->
+        <i class="fab fa-linkedin fa-2x link-icon"></i><br>
+        <a href="https://www.linkedin.com/in/liam-kaznelson" target="_blank" class="plain-link">LinkedIn</a>
+      </li>
+      <!-- Add more links as you create profiles, using appropriate icons -->
+    </ul>
+  </div>
 </body>
 </html>

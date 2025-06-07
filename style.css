@@ -1,40 +1,229 @@
 /* Simple CSS for Liam's personal website */
 
-/* Style for the hero section */
+/* Hero section styles */
 .hero {
-  text-align: center; /* Center the text and image */
-  background-color: #f0f0f0; /* Light background color */
-  padding: 30px 0; /* Space above and below */
+  /* Dark blue background */
+  background: #183153;
+  color: #fff; /* Make text white for contrast */
+  text-align: center;
+  padding: 40px 10px;
+  position: relative; /* Needed for cityscape effect */
+  margin-bottom: 0;
 }
 
-/* Style for the profile image */
+/* Make hero section fill the whole page for subpages and align content to the top */
+.fullpage-hero {
+  min-height: 100vh; /* Fill at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;         /* Center content horizontally */
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-top: 40px; /* Add space from the top */
+}
+
+/* Simple cityscape using CSS shapes */
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background:
+    repeating-linear-gradient(
+      to right,
+      #223c63 0 20px,
+      transparent 20px 40px
+    ),
+    repeating-linear-gradient(
+      to right,
+      transparent 0 10px,
+      #ffd700 10px 12px,
+      transparent 12px 40px
+    );
+  clip-path: polygon(
+    0% 100%, 0% 40%, 5% 60%, 10% 30%, 15% 70%, 20% 50%, 25% 80%, 30% 60%, 35% 90%, 40% 40%, 45% 70%, 50% 50%, 55% 80%, 60% 60%, 65% 90%, 70% 40%, 75% 70%, 80% 50%, 85% 80%, 90% 60%, 95% 90%, 100% 40%, 100% 100%
+  );
+  z-index: 1;
+}
+
+/* Make sure content is above the cityscape */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Profile image styles */
 .hero-img {
-  width: 150px; /* Set image width */
-  border-radius: 50%; /* Make the image round */
-  margin-top: 15px; /* Space above the image */
+  width: 140px;
+  border-radius: 50%;
+  margin-top: 15px;
+  border: 3px solid #fff; /* White border for contrast */
 }
 
-/* Style for section headings */
+/* About Me paragraph in hero */
+.about-me {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+/* Skills section styles */
+.skills-section {
+  /* Slightly lighter blue than hero */
+  background-color: #22406a;
+  color: #fff; /* White text for contrast */
+  padding: 30px 10px;
+  text-align: center;
+}
+
+/* Links section styles */
+.links-section {
+  /* Even lighter blue shade */
+  background-color: #2d5186;
+  color: #fff; /* White text for contrast */
+  padding: 30px 10px;
+  text-align: center;
+}
+
+/* Display the Find Me Online links horizontally with more spacing */
+.links-horizontal {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* Prevent wrapping on small screens (optional for beginners) */
+  white-space: nowrap;
+}
+
+.links-horizontal li {
+  display: inline-block; /* Use inline-block for better vertical alignment */
+  margin: 0 36px; /* More space between each item */
+  vertical-align: top; /* Align icons and text to the top */
+  text-align: center; /* Center icon and text inside each item */
+}
+
+/* Style for icons in the Find Me Online section */
+.links-horizontal i.link-icon {
+  display: block;
+  margin-bottom: 6px;
+  color: #fff; /* Match the section text color */
+}
+
+/* Section headings */
 h2 {
-  color: #333;
-}
-
-/* Style for the biography, skills, and links sections */
-.biography, .skills, .links {
-  max-width: 600px; /* Limit width for readability */
-  margin: 30px auto; /* Center the sections */
-  padding: 20px;
-  background-color: #ffffff; /* White background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow */
+  color: #fff;
 }
 
 /* Style for links */
 a {
-  color: #007acc;
+  color: #ffd700; /* Gold color for links */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Simple navigation bar styles */
+.navbar {
+  background-color: #14213d; /* Very dark blue */
+  padding: 10px 0; /* Space above and below the links */
+  text-align: center; /* Center the links */
+}
+
+/* Remove default list styling */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Display list items inline */
+.navbar li {
+  display: inline;
+  margin: 0 15px; /* Space between links */
+}
+
+/* Style the navigation links */
+.navbar a {
+  color: #ffd700; /* Gold color for links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Change link color when hovered */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Programming Philosophy section styles - use a blue shade closer to other sections */
+.philosophy-section {
+  background-color: #2d5186; /* Now matches the links-section for a cohesive look */
+  color: #fff; /* White text for contrast */
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 0;
+  max-width: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+.philosophy-text {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+/* Make GitHub and LinkedIn link text the same color as other text */
+.plain-link {
+  color: #fff; /* Match section text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plain-link:hover {
+  text-decoration: underline;
+}
+
+/* Spotify Favorites section styles - similar to other sections */
+.spotify-section {
+  background-color: #22406a; /* Similar blue as skills-section */
+  color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+/* Style the Spotify song list */
+.spotify-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spotify-list li {
+  display: inline-block;
+  margin: 0 24px 16px 24px; /* Space between songs */
+  text-align: center;
+}
+
+/* Spotify icon style */
+.spotify-icon {
+  color: #1db954; /* Spotify green */
+  margin-bottom: 6px;
+}
+
+/* Spotify song thumbnail style - larger size */
+.spotify-thumb {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
