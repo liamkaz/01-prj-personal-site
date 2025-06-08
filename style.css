@@ -274,7 +274,7 @@ a:hover {
   width: 260px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin-bottom: 12px;
-  text-align: left;
+  text-align: center; /* Center the text */
 }
 
 /* Project title styling - center and use a lighter blue */
@@ -293,4 +293,11 @@ a:hover {
   margin-top: -10px;
   margin-bottom: 18px;
   text-align: center;
+}
+
+/* Container to keep about page text condensed */
+.about-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
